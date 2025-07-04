@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mayank Jha - Portfolio</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mayank Jha - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<header>
-<h1>Mayank Jha</h1>
-<img src="Mayank.jpeg" alt="Profile Photo">
-<p>Hi, I am Mayank, a second year ICE undergrad in NSUT. I am a tech enthusiast and over the past few month I have been developing my skills in DSA and webdev.I have also created a Ml working model on spotify. In my free time, I love exploring about finance and global politics.</p>
-<button id="modeToggle">Toggle Dark Mode</button>
-</header>
+  <header>
+    <img src="Mayank.jpeg" alt="Mayank Jha">
+    <h1>Mayank Jha</h1>
+    <p class="intro">
+      Hi, I am Mayank, a second year ICE undergrad at NSUT. I am a tech enthusiast exploring DSA and Web Development. I have built ML models like Spotify predictive analysis. I also love learning about finance and global politics.
+    </p>
+    <button id="modeToggle">🌗 Toggle Dark Mode</button>
+  </header>
 
-<section id="projects">
-<h2>Projects</h2>
-<div class="project-card">
-<h3>Contacts Book</h3>
-<p>I created a feature-rich CRUD web application using the Python Flask framework that enables users to securely manage their contacts. I implemented user authentication with password hashing to ensure data security. The application allows users to create, read, update, and delete contact entries stored in a SQL database. I developed REST APIs for smooth data interaction and integrated search functionality to easily filter contacts. Additionally, I designed the front end using HTML and CSS to deliver a clean and intuitive interface and managed the project with Git version control on GitHub</p>
-</div>
-<div class="project-card">
-<h3>ML Regression Model for Predictive Analysis</h3>
-<p>I created an end-to-end machine learning pipeline in Python to predict numerical outcomes with scikit-learn regression models. I performed data cleaning, exploratory data analysis, and feature engineering to improve prediction accuracy. I trained and evaluated models using metrics such as the R² score to measure performance. To make the results interpretable, I generated insightful visualizations with Matplotlib and Seaborn, highlighting key data patterns and model insights.
-</p>
-</div>
-<div class="project-card">
-<h3>World Clock Web Application</h3>
-<p>I created a responsive web application that displays real-time clocks for multiple cities around the world. I used JavaScript date-time APIs to dynamically fetch and update the time for each location. I designed a grid-based layout with CSS to present all clocks in an organized and visually appealing manner. This project demonstrates my front-end development skills and my ability to handle asynchronous JavaScript operations effectively.</p>
-</div>
-<div class="project-card">
-<h3>Dictionary App</h3>
-<p>Interactive dictionary app in Python fetching data from free API. Includes search, error handling, and clean UI.</p>
-</div>
-</section>
+  <main>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Contacts Book</h3>
+          <p>Feature-rich CRUD web app using Python Flask, SQL database, secure user authentication, REST APIs, search, and a clean UI.</p>
+        </div>
+        <div class="project-card">
+          <h3>ML Regression Model</h3>
+          <p>End-to-end machine learning pipeline with scikit-learn regression, EDA, feature engineering, and performance visualization.</p>
+        </div>
+        <div class="project-card">
+          <h3>World Clock App</h3>
+          <p>Responsive web app displaying real-time clocks worldwide using JavaScript Date APIs and CSS grid layout.</p>
+        </div>
+        <div class="project-card">
+          <h3>Dictionary App</h3>
+          <p>Python-based interactive dictionary fetching API data with search, error handling, and a simple interface.</p>
+        </div>
+      </div>
+    </section>
 
-<section id="contact">
-<h2>Contact</h2>
-<form id="contactForm">
-<label for="name">Name</label>
-<input type="text" id="name" name="name" required>
-<label for="email">Email</label>
-<input type="email" id="email" name="email" required>
-<label for="message">Message</label>
-<textarea id="message" name="message" required></textarea>
-<button type="submit">Send</button>
-</form>
-<p>Email: mayankkumarjha523@gmail.com</p>
-</section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p class="email">📧 mayankkumarjha523@gmail.com</p>
+    </section>
+  </main>
 
-<script src="script.js"></script>
+  <footer>
+    <p>&copy; 2025 Mayank Jha</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
